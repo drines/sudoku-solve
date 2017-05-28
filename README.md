@@ -1,6 +1,22 @@
 # Artificial Intelligence Nanodegree
 ## Introductory Project: Diagonal Sudoku Solver
 
+# Overview
+AIND Sudoku project submission code. Program intelligently solves any
+sudoku puzzle, includes ```naked_twins()``` heuristic code and support for diagonal
+sudoku puzzles. Portions of this code are adapted from the Udacity - Artificial
+Intelligence Nanodegree (May 2017 session) online MOOC.
+
+Input: initial puzzle configuration  
+Output: 2-D puzzle solution
+
+Author: Daniel R Rines  
+Email: drines@gmail.com
+
+Created: Friday, May 23, 2017  
+Version: 2017.05.25.003
+
+
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
 A: *To reduce the size of the potential search space, constraint propagation implements one or more heuristic approaches (e.g. comparative constraints between different boxes in a peer group). If two boxes are found in the same peer group that contain the exact same two digits, then those digits must be exclusively in either of those boxes and not any other box within the same peer-associated members. The ```naked_twins()``` function offers a search limiting constraint: by first identifying any naked twins, then eliminating any digits from peer-associated non-naked twin boxes; we can gain a potential advantage and intelligently remove digits that can't possibly exist in the other boxes. Thus, ```naked_twins()``` is added as part of the iterative loop executed in the ```reduce_puzzle()``` function and adds a level of intelligence not previously included in the lecture described solutions.*
