@@ -11,7 +11,7 @@ Input: initial puzzle configuration
 Output: 2-D puzzle solution
 
 Author: Daniel R Rines  
-Email: drines@gmail.com
+Github: drines
 
 Created: Friday, May 23, 2017  
 Version: 2017.05.25.003
